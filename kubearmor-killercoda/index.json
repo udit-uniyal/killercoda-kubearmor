@@ -16,9 +16,17 @@
         "text": "step2/text.md"
       },
       {
-        "title": "Apply Policy",
+        "title": "Before enforcing the 'Deny execution of package management tools (apt/apt-get)' policy, we can use the 'apt' command to install any application.",
         "text": "step3/text.md"
-      }
+      },
+      {
+        "title": "Apply Policy",
+        "text": "step4/text.md"
+      },
+      {
+        "title": "After the enforcement of the 'Deny execution of package management tools (apt/apt-get)' policy, we cannot use the 'apt' command to install any application.",
+        "text": "step5/text.md"
+      },
     ],
     "finish": {
       "text": "finish.md"
