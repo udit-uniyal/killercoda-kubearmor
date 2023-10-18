@@ -1,2 +1,0 @@
-# kubearmor
-kubearmor-scenerio 
