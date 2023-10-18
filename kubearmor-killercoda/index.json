@@ -4,20 +4,20 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "script": "setup.sh"
+      "background": "setup.sh"
     },
     "steps": [
       {
         "title": "Kubearmor Installation",
-        "text": "step1/text.md",
+        "text": "step1/text.md"
       },
       {
-        "title": "Nginx Deployement",
-        "text": "step2/text.md",
+        "title": "Nginx Deployment",
+        "text": "step2/text.md"
       },
       {
         "title": "Apply Policy",
-        "text": "step3/text.md",
+        "text": "step3/text.md"
       }
     ],
     "finish": {
