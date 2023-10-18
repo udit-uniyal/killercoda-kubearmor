@@ -5,7 +5,6 @@
     "intro": {
       "text": "intro.md",
       "background": "setup.sh",
-      "backgroundrun": "installsetup.sh"
     },
     "steps": [
       {
