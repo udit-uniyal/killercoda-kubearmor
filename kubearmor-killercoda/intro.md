@@ -1,1 +1,1 @@
-KubeArmor: The Kubernetes Security Solution You Need
+The Kubernetes Security Solution You Need
