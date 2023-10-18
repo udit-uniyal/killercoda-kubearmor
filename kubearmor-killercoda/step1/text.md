@@ -2,8 +2,7 @@
 
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
-```{{exec}}
-
-```plain
 karmor install
 ```{{exec}}
+
+
