@@ -13,6 +13,6 @@ spec:
     - path: /usr/bin/apt-get
   action:
     Block
-EOT && curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin && karmor install
+EOT 
 
 
