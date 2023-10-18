@@ -1,6 +1,10 @@
 {
   "name": "KubeArmor Scenario",
   "description": "This scenario demonstrates how to use KubeArmor to protect a Kubernetes cluster.",
+  "tags": ["kubernetes", "karmor", "security"],
+  "backend": {
+    "imageid": "ubuntu"
+  },
   "steps": [
     {
       "name": "Install KubeArmor",
@@ -16,7 +20,7 @@
     },
     {
       "name": "Test KubeArmor",
-      "command": "karmor apply policy kubearmor-scenerio.json.yaml"
+      "command": "karmor apply policy kubearmor-policy.yaml"
     },
     {
       "name": "Delete Nginx App",
