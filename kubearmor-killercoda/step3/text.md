@@ -1,7 +1,3 @@
-### Deny execution of package management tools (apt/apt-get)
-
-#### Lets apply the policy to block such execution:
-
 ```plain
-kubectl apply -f Deny-execution-of-package-management-tool.yaml
+kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
 ```{{exec}}
