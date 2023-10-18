@@ -25,7 +25,7 @@
         "text": "step4/text.md"
       },
       {
-        "title": "Step 5: After Enforcing the 'Deny Execution of Package Management Tools (apt/apt-get)' Policy",
+        "title": "Step 5: Checking apt/apt-get command before policy enforcement",
         "text": "step5/text.md"
       }
     ],
