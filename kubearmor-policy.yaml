@@ -1,0 +1,28 @@
+apiVersion: kubearmor.io/v1alpha1
+kind: Policy
+metadata:
+  name: kubearmor-policy
+spec:
+  rules:
+  - action: DENY
+    apiGroups:
+    - ""
+    resources:
+    - pods
+    verbs:
+    - "get"
+    - "list"
+    - "watch"
+  - action: ALLOW
+    apiGroups:
+    - "apps"
+    resources:
+    - deployments
+    verbs:
+    - "create"
+    - "delete"
+    - "get"
+    - "list"
+    - "patch"
+    - "update"
+    - "watch"
