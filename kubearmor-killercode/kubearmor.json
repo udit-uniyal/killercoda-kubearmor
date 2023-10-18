@@ -1,34 +1,34 @@
 {
   "version": "1.0",
   "scenario": "install-kubearmor-deploy-nginx",
-  "steps": [
-    {
-      "name": "Install KubeArmor",
-      "commands": [
-        "curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin",
-        "karmor install"
-      ]
-    },
-    {
-      "name": "Deploy test nginx app",
-      "commands": [
-        "kubectl create deployment nginx --image=nginx"
-      ]
-    },
-    {
-      "name": "Get POD name",
-      "commands": [
-        "POD=$(kubectl get pod -l app=nginx -o name)"
-      ]
-    },
-    {
-      "name": "Apply policy",
-      "commands": [
-        "kubectl apply -f deny-execurtion-of-package-management.yaml"
-      ]
-    }
-  ],
   "backend": {
-    "imageid": "kubernetes-kubeadm-1node"
+    "imageid": "kubernetes-kubeadm-1node",
+    "steps": [
+      {
+        "name": "Install KubeArmor",
+        "commands": [
+          "curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin",
+          "karmor install"
+        ]
+      },
+      {
+        "name": "Deploy test nginx app",
+        "commands": [
+          "kubectl create deployment nginx --image=nginx"
+        ]
+      },
+      {
+        "name": "Get POD name",
+        "commands": [
+          "POD=$(kubectl get pod -l app=nginx -o name)"
+        ]
+      },
+      {
+        "name": "Apply policy",
+        "commands": [
+          "karmor apply deny-execurtion-of-package-management.yaml"
+        ]
+      }
+    ]
   }
 }
