@@ -1,35 +1,30 @@
 {
-  "version": "1.0",
-  "scenario": "install-kubearmor-deploy-nginx",
-  "steps": [
-    {
-      "name": "Install KubeArmor",
-      "commands": [
-        "curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin",
-        "karmor install"
-      ]
+  "title": "Unleashing the Power of Kubernetes Security",
+  "description": "Securing your Kubernetes cluster with confidence.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
     },
-    {
-      "name": "Deploy test nginx app",
-      "commands": [
-        "kubectl create deployment nginx --image=nginx"
-      ]
-    },
-    {
-      "name": "Get POD name",
-      "commands": [
-        "POD=$(kubectl get pod -l app=nginx -o name)"
-      ]
-    },
-    {
-      "name": "Apply policy",
-      "commands": [
-        "karmor apply deny-execurtion-of-package-management.yaml"
-      ]
+    "steps": [
+      {
+        "title": "Kubearmor Installation",
+        "text": "step1/text.md",
+      },
+      {
+        "title": "Nginx Deployement",
+        "text": "step2/text.md",
+      },
+      {
+        "title": "Apply Policy",
+        "text": "step3/text.md",
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
     }
-  ],
+  },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node"
   }
 }
-
