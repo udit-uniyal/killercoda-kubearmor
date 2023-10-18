@@ -17,7 +17,7 @@
         "text": "step2/text.md"
       },
       {
-        "title": "Step 3: Before Enforcing the 'Deny Execution of Package Management Tools (apt/apt-get)' Policy",
+        "title": "Step 3: Checking apt/apt-get command before policy enforcement",
         "text": "step3/text.md"
       },
       {
