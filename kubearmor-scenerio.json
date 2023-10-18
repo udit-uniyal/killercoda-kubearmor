@@ -3,7 +3,7 @@
   "description": "This scenario demonstrates how to use KubeArmor to protect a Kubernetes cluster.",
   "tags": ["kubernetes", "karmor", "security"],
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "kubernetes-kubeadm-1node"
   },
   "steps": [
     {
