@@ -1,0 +1,26 @@
+{
+  "name": "KubeArmor Scenario",
+  "description": "This scenario demonstrates how to use KubeArmor to protect a Kubernetes cluster.",
+  "steps": [
+    {
+      "name": "Install KubeArmor",
+      "command": "curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin; karmor install"
+    },
+    {
+      "name": "Deploy Test Nginx App",
+      "command": "kubectl create deployment nginx --image=nginx"
+    },
+    {
+      "name": "Get Nginx Pod Name",
+      "command": "POD=$(kubectl get pod -l app=nginx -o name)"
+    },
+    {
+      "name": "Test KubeArmor",
+      "command": "karmor apply policy my-policy.yaml"
+    },
+    {
+      "name": "Delete Nginx App",
+      "command": "kubectl delete deployment nginx"
+    }
+  ]
+}
