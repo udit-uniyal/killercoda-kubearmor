@@ -1,4 +1,4 @@
-cat <<EOT >> .txt
+cat <<EOT >> Deny-execution-of-package-management-tool.yaml
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
