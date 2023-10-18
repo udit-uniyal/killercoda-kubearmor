@@ -1,5 +1,4 @@
-cat <<EOT >> Deny-execution-of-package-management-tool.yaml
-apiVersion: security.kubearmor.com/v1
+echo "apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
   name: block-pkg-mgmt-tools-exec
@@ -12,7 +11,5 @@ spec:
     - path: /usr/bin/apt
     - path: /usr/bin/apt-get
   action:
-    Block
-EOT 
-
+    Block" >> Deny-execution-of-package-management-tool.yaml
 
