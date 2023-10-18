@@ -1,6 +1,6 @@
 {
   "title": "Kubearmor: Unleashing the Power of Kubernetes Security",
-  "description": "Securing your Kubernetes cluster with confidence.",
+  "description": "Securing Your Kubernetes Cluster with Confidence",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -8,25 +8,25 @@
     },
     "steps": [
       {
-        "title": "Kubearmor Installation",
+        "title": "Step 1: Kubearmor Installation",
         "text": "step1/text.md"
       },
       {
-        "title": "Nginx Deployment",
+        "title": "Step 2: Nginx Deployment",
         "text": "step2/text.md"
       },
       {
-        "title": "Before enforcing the 'Deny execution of package management tools (apt/apt-get)' policy, we can use the 'apt' command to install any application.",
+        "title": "Step 3: Before Enforcing the 'Deny Execution of Package Management Tools (apt/apt-get)' Policy",
         "text": "step3/text.md"
       },
       {
-        "title": "Apply Policy",
+        "title": "Step 4: Apply Policy",
         "text": "step4/text.md"
       },
       {
-        "title": "After the enforcement of the 'Deny execution of package management tools (apt/apt-get)' policy, we cannot use the 'apt' command to install any application.",
+        "title": "Step 5: After Enforcing the 'Deny Execution of Package Management Tools (apt/apt-get)' Policy",
         "text": "step5/text.md"
-      },
+      }
     ],
     "finish": {
       "text": "finish.md"
