@@ -16,7 +16,7 @@
         "text": "step2/text.md"
       },
       {
-        "title": "Step 3: Checking apt/apt-get command before policy enforcement",
+        "title": "Step 3: Before Policy Enforcement",
         "text": "step3/text.md"
       },
       {
@@ -24,7 +24,7 @@
         "text": "step4/text.md"
       },
       {
-        "title": "Step 5: Checking apt/apt-get command before policy enforcement",
+        "title": "Step 5: After Policy Enforcement",
         "text": "step5/text.md"
       }
     ],
