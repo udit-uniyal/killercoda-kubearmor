@@ -1,5 +1,3 @@
-### Before Policy Enforcement:
-
 **Objective:** The attacker's goal is to install and utilize 'masscan,' a network scanning tool, on a target system.
 
 **Vulnerability Identification:** The attacker identifies that the organization has not yet enforced the 'Deny execution of package management tools (apt/apt-get)' policy, making it possible to use the 'apt' command for software installation.
