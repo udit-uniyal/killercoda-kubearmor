@@ -1,2 +1,2 @@
 ### Architecture Overview
-![Scan results](/kubearmor.png)
+![Scan results](./kubearmor.png)
