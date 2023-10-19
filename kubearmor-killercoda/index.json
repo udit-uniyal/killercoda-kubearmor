@@ -26,6 +26,18 @@
       {
         "title": "Step 5: After Policy Enforcement",
         "text": "step5/text.md"
+      },
+            {
+        "title": "Step 6: Scenario 2: Before Policy Enforcement",
+        "text": "step6/text.md"
+      },
+      {
+        "title": "Step 7: Apply Policy",
+        "text": "step7/text.md"
+      },
+      {
+        "title": "Step 8: After Policy Enforcement",
+        "text": "step8/text.md"
       }
     ],
     "finish": {
