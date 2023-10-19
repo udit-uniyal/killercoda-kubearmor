@@ -1,4 +1,4 @@
-Before Policy Enforcement:
+### Before Policy Enforcement:
 
 **Objective:** The attacker's goal is to install and utilize 'masscan,' a network scanning tool, on a target system.
 
