@@ -1,5 +1,3 @@
-#### After Policy Enforcement:
-
 **Policy Implementation:** The organization implements and enforces the 'Deny execution of package management tools (apt/apt-get)' KubeArmor policy to enhance security.
 
 **Prevention of Unauthorized 'apt' Usage:** The policy now blocks the use of the 'apt' command as demonstrated in the following command:
