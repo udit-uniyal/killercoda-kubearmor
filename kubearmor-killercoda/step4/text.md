@@ -18,6 +18,6 @@ spec:
     - path: /usr/bin/apt-get
   action:
     Block
-EOF}})
-```{{exec}}
+EOF```{{exec}}}})
+
 
