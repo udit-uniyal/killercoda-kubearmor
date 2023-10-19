@@ -19,5 +19,5 @@ spec:
   action:
     Block
 EOF}})
-
+```{{exec}}
 
