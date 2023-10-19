@@ -8,7 +8,7 @@
     },
     "steps": [
       {
-        "title": "Step 1: Kubearmor Installation",
+        "title": "Step 1: KubeArmor Installation",
         "text": "step1/text.md"
       },
       {
