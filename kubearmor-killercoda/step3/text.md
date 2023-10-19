@@ -6,7 +6,7 @@
 
 **Exploitation:** The attacker leverages this vulnerability by executing the following command on the target system using 'kubectl':
 
-```plain
+```
 kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
 ```{{exec}}
 ```
