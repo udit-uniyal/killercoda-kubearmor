@@ -13,6 +13,7 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
+kubectl get po -n kubearmor | tail -n +2 | grep -v "Running\|Completed" && exit
 ```{{exec}}
 
 
