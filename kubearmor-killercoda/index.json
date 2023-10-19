@@ -30,56 +30,7 @@
       {
         "title": "Attack Scenario 1: After Policy Enforcement",
         "text": "step5/text.md"
-      },
-      {
-        "title": "Attack Scenario 2: Introduction",
-        "text": "Attackscenario2/text.md"
-      },
-      {
-        "title": "Attack Scenario 2: Before Policy Enforcement",
-        "text": "step6/text.md"
-      },
-      {
-        "title": "Attack Scenario 2: Apply Policy",
-        "text": "step7/text.md"
-      },
-      {
-        "title": "Attack Scenario 2: After Policy Enforcement",
-        "text": "step8/text.md"
-      },
-      {
-        "title": "Attack Scenario 3: Introduction",
-        "text": "Attackscenario3/text.md"
-      },
-      {
-        "title": "Attack Scenario 3: Before Policy Enforcement",
-        "text": "step6/text.md"
-      },
-      {
-        "title": "Attack Scenario 3: Apply Policy",
-        "text": "step7/text.md"
-      },
-      {
-        "title": "Attack Scenario 3: After Policy Enforcement",
-        "text": "step8/text.md"
-      },
-            {
-        "title": "Attack Scenario 4: Introduction",
-        "text": "Attackscenario4/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: Before Policy Enforcement",
-        "text": "step6/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: Apply Policy",
-        "text": "step7/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: After Policy Enforcement",
-        "text": "step8/text.md"
-      },
-
+      }
       
     ],
     "finish": {
