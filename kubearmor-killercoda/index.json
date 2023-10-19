@@ -1,10 +1,9 @@
 {
-  "title": "KUBEARMOR: Unleashing the Power of Kubernetes Security",
-  "description": "KubeArmor is a cloud-native runtime security enforcement system that restricts the behavior (such as process execution, file access, and networking operations) of pods, containers, and nodes (VMs) at the system level.",
+  "title": "KubeArmor: Unleashing the Power of Kubernetes Security",
+  "description": "KubeArmor enforces cloud-native runtime security for pods, containers, and nodes.",
   "details": {
     "intro": {
       "text": "intro.md",
-      "text": "images.md",
       "background": "setup.sh"
     },
     "steps": [
