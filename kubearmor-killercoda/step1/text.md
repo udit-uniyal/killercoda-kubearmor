@@ -5,7 +5,8 @@ helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update kubearmor
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
 kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/pkg/KubeArmorOperator/config/samples/sample-config.yml
-while [ "$(kubectl get po -n kubearmor | tail -n +2 | grep -v "Running\|Completed")" ]; do
+while [ "$(kubectl get po -n kubearmor | tail -n +2 | grep -v "Completed")" ]; do
+  watch kubectl get po -n kubearmor
   sleep 10
 done
 
@@ -16,7 +17,8 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-while [ "$(kubectl get po -n kubearmor | tail -n +2 | grep -v "Running\|Completed")" ]; do
+while [ "$(kubectl get po -n kubearmor | tail -n +2 | grep -v "Completed")" ]; do
+  watch kubectl get po -n kubearmor
   sleep 10
 done
 
