@@ -1,3 +1,5 @@
+Let's apply the Deny access to service account token policy
+
 ```
 cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
