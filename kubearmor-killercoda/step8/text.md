@@ -1,20 +1,5 @@
-Let's apply the Deny access to service account token policy
+**Effect of the Policy:**With the policy in place, if anyone tries to access a service account token within a pod, they will encounter a "Permission Denied" error. This hinders unauthorized access.
 
-```
-cat <<EOF | kubectl apply -f -
-apiVersion: security.kubearmor.com/v1
-kind: KubeArmorPolicy
-metadata:
-  name: block-service-access-token-access
-spec:
-  selector:
-    matchLabels:
-      app: nginx
-  file:
-    matchDirectories:
-    - dir: /run/secrets/kubernetes.io/serviceaccount/
-      recursive: true
-  action:
-    Block
-EOF
-```{{exec}}
+`kubectl exec -it $POD -- bash`{{exec}}
+
+`curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)"`{{exec}}
