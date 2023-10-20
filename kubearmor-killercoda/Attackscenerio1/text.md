@@ -4,7 +4,7 @@
 
 **Vulnerability Identification:** Identifying the absence of a 'Deny execution of package management tools' policy.
 
-**Exploitation: **Using 'kubectl' to execute 'apt update' and 'apt install masscan' commands on the target system.
+**Exploitation:** Using 'kubectl' to execute 'apt update' and 'apt install masscan' commands on the target system.
 
 **Unauthorized Installation:** Successfully installs 'masscan' on the target system, providing the attacker with network scanning capabilities.
 
@@ -18,7 +18,7 @@
 
 **Mitigation:** Implementing and enforcing the 'Deny execution of package management tools (apt/apt-get)' KubeArmor policy to block the execution of such commands.
 
-**Prevention: **By enforcing the policy, the organization effectively prevents the attacker from using 'apt' to install unauthorized software like 'masscan.'
+**Prevention:** By enforcing the policy, the organization effectively prevents the attacker from using 'apt' to install unauthorized software like 'masscan.'
 
 **Security Enhancement:** With the policy in place, the organization enhances its security posture, reducing the risk of unauthorized software installations and potential network scanning activities.
 
