@@ -16,7 +16,7 @@
         "text": "step2/text.md"
       },
       {
-        "title": "Attack Scenario 1",
+        "title": "Attack Scenario 1: Introduction",
         "text": "Attackscenerio1/text.md"
       },
       {
@@ -30,6 +30,22 @@
       {
         "title": "Attack Scenario 1: After Policy Enforcement",
         "text": "step5/text.md"
+      },
+         {
+        "title": "Attack Scenario 2: Introduction",
+        "text": "Attackscenario2/text.md"
+      },
+      {
+        "title": "Attack Scenario 2: Before Policy Enforcement",
+        "text": "step6/text.md"
+      },
+      {
+        "title": "Attack Scenario 2: Apply Policy",
+        "text": "step7/text.md"
+      },
+      {
+        "title": "Attack Scenario 2: After Policy Enforcement",
+        "text": "step8/text.md"
       }
       
     ],
