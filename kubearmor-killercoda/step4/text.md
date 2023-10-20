@@ -3,7 +3,8 @@
 Lets apply the policy to block such execution:
 
 
-[Apply Policy](```bash
+[Apply Policy](#)
+```bash
 cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
@@ -19,7 +20,7 @@ spec:
     - path: /usr/bin/apt-get
   action:
     Block
-EOF)
+EOF
 
 
 
