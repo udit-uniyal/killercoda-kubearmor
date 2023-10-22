@@ -5,7 +5,8 @@ helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update 
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
 kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/pkg/KubeArmorOperator/config/samples/sample-config.yml
-./setup.sh
+watch -n 1 '[[ "$(kubectl get po -n kubearmor --no-headers | awk "{ print \$3 }" | grep -v "Running")" == "" && "$(date +%s)" -ge "$((SECONDS+120))" ]] && pkill -f "watch" && echo "All pods are in Running state"'
+
 ```{{exec}}
 
 OR
@@ -13,7 +14,7 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-./setup.sh
+watch -n 1 '[[ "$(kubectl get po -n kubearmor --no-headers | awk "{ print \$3 }" | grep -v "Running")" == "" && "$(date +%s)" -ge "$((SECONDS+120))" ]] && pkill -f "watch" && echo "All pods are in Running state"'
 ```{{exec}}
 
 
