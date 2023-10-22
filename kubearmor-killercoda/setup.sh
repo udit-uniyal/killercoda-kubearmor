@@ -1,3 +1,4 @@
+cat > setup.sh << EOL
 #!/bin/bash
 
 namespace="kubearmor"
@@ -27,4 +28,4 @@ while true; do
     sleep 5  # Check every 5 seconds
   fi
 done
-
+EOL 
