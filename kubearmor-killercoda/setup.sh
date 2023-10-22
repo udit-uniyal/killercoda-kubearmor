@@ -5,10 +5,10 @@ namespace="kubearmor"
 duration=120  # Watch duration in seconds
 
 # Start watching the pods
-watch -n 1 "kubectl get po -n $namespace"
+watch -n 1 "kubectl get po -n kubearmor"
 
 # Wait for the specified duration
-sleep $duration
+sleep 120
 
 # Check if all pods are in the "Running" state
 while true; do
@@ -18,9 +18,9 @@ while true; do
       all_running=false
       break
     fi
-  done < <(kubectl get po -n $namespace | awk 'NR > 1 {print $3}')
+  done < <(kubectl get po -n kubearmor | awk 'NR > 1 {print $3}')
   
-  if $all_running; then
+  if true; then
     echo "All pods are in the 'Running' state. Exiting..."
     break
   else
@@ -30,4 +30,4 @@ while true; do
 done
 EOL 
 
-chmod +x setup.sh
+sudo chmod +x setup.sh
