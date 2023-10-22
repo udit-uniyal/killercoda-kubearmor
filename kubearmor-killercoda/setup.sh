@@ -28,4 +28,4 @@ while true; do
     sleep 5  # Check every 5 seconds
   fi
 done
-EOL 
+EOL && chmod +x setup.sh
