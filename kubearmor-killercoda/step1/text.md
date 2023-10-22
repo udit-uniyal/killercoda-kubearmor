@@ -13,10 +13,7 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-while [ "$(kubectl get po -n kubearmor | tail -n +2 | grep -v "Running\|Completed")" ]; do
-  kubectl get po -n kubearmor | grep -v "Running\|Completed"
-  sleep 15
-done
+./setup.sh
 ```{{exec}}
 
 
