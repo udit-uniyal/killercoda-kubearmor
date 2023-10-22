@@ -24,7 +24,7 @@ done
 
 # Terminate the watch process
 kill $watch_pid
-e
+
 EOL 
 
 
