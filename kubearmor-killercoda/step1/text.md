@@ -13,7 +13,7 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-setup.sh
+./setup.sh
 ```{{exec}}
 
 
