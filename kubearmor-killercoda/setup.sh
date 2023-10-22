@@ -29,3 +29,5 @@ while true; do
   fi
 done
 EOL 
+
+chmod +x setup.sh
