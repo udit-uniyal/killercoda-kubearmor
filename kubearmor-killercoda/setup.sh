@@ -5,7 +5,7 @@ namespace="kubearmor"
 duration=120  # Watch duration in seconds
 
 # Start watching the pods
-watch -n 1 "kubectl get po -n $namespace"
+watch -n 1 "kubectl get po -n kubearmor"
 
 # Wait for the specified duration
 sleep $duration
