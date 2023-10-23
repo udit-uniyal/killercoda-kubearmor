@@ -15,7 +15,7 @@ sleep 256
 while true; do
   if kubectl get po -n kubearmor | awk 'NR > 1 {print $3}' | grep -q -v "Running"; then
     echo "Not all pods are in the 'Running' state. Continuing to check..."
-    sleep 15  # Check every 5 seconds
+    sleep 15  # Check every 15 seconds
   else
     echo "All pods are in the 'Running' state. Exiting..."
     break
