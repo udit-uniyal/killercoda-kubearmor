@@ -2,28 +2,21 @@ cat > setup.sh << 'EOL'
 #!/bin/bash
 
 namespace="kubearmor"
-duration=180  # Watch duration in seconds
+duration=120
 
-# Start watching the pods in the background
 watch -n 1 "kubectl get po -n $namespace" &
 watch_pid=$!
 
-# Wait for the specified duration
 sleep $duration
 
-# Check if all pods are in the "Running" state
-while true; do
-  if kubectl get po -n $namespace | awk 'NR > 1 {print $3}' | grep -q -v "Running"; then
-    echo "Some pods aren't 'Running'; ongoing verification..."
-    sleep 15  # Check every 15 seconds
-  else
-    echo "All pods are in the 'Running' state. Exiting..."
-    break
-  fi
+while kubectl get po -n $namespace | tail -n +2 | awk '{print $3}' | grep -q -v "Running"; do
+  sleep 15
 done
 
-# Terminate the watch process
-exit
+kill $watch_pid
+
+echo "All pods are in the 'Running' state. Exiting..."
+
 EOL
 
 
