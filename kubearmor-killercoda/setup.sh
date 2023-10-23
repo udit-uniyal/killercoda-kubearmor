@@ -23,8 +23,7 @@ while true; do
 done
 
 # Terminate the watch process
-kill $watch_pid
-
+exit
 EOL 
 
 
