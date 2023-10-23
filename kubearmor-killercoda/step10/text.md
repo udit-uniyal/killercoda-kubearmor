@@ -1,5 +1,6 @@
 Let's apply the policy:
 
+```
 cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
@@ -44,3 +45,4 @@ spec:
   action:
     Allow
 EOF
+```{{exec}}
