@@ -13,7 +13,7 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-namespace="kubearmor" && duration=120 && (watch -n 1 "kubectl get po -n $namespace" & sleep $duration; while kubectl get po -n $namespace | tail -n +2 | awk '{print $3}' | grep -q -v "Running"; do sleep 15; done; echo "All pods are in the 'Running' state. Exiting..."; pkill -P $$) && exit && clear
+chmod +x setup.sh && ./setup.sh
 ```{{exec}}
 
 
