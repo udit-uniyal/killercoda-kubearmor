@@ -2,7 +2,7 @@ cat > setup.sh << EOL
 #!/bin/bash
 
 namespace="kubearmor"
-duration=220  # Watch duration in seconds
+duration=256  # Watch duration in seconds
 
 # Start watching the pods in the background
 watch -n 1 "kubectl get po -n kubearmor" &
