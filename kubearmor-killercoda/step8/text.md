@@ -2,4 +2,4 @@
 
 `kubectl exec -it $POD -- bash`{{exec}}
 
-`curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)"`{{exec}}
+`curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)" && exit`{{exec}}
