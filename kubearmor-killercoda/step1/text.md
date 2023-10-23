@@ -14,8 +14,8 @@ OR
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
 karmor install
-namespace="kubearmor" && duration=120 && (watch -n 1 "kubectl get po -n $namespace" & sleep $duration; while kubectl get po -n $namespace | awk 'NR > 1 {print $3}' | grep -q -v "Running"; do sleep 15; done; echo "All pods are in the 'Running' state. Exiting..."; kill $!; kill -INT $$)
-``{{exec interrupt}}
+namespace="kubearmor" && duration=120 && (watch -n 1 "kubectl get po -n $namespace" & sleep $duration; while kubectl get po -n $namespace | awk 'NR > 1 {print $3}' | grep -q -v "Running"; do sleep 15; done; echo "All pods are in the 'Running' state. Exiting...")
+`exit`{{exec interrupt}}
 ```{{exec}}
 
 
