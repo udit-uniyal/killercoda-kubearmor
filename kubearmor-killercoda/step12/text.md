@@ -12,8 +12,8 @@ spec:
       app: nginx
   file:
     matchDirectories:
-      - dir: /etc/nginx/
-        recursive: true
+    - dir: /etc/nginx/
+      recursive: true
   action:
     Audit
 EOF
