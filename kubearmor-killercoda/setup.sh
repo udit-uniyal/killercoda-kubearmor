@@ -10,7 +10,7 @@ watch_pid=$!
 sleep $duration
 
 while kubectl get po -n $namespace | tail -n +2 | awk '{print $3}' | grep -q -v "Running"; do
-  sleep 15
+  sleep 5
 done
 
 kill $watch_pid
