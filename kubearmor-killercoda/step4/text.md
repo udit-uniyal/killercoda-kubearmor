@@ -8,6 +8,7 @@ apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
   name: block-pkg-mgmt-tools-exec
+  namespace: wordpress-mysql
 spec:
   selector:
     matchLabels:
