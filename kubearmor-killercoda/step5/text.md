@@ -3,7 +3,7 @@
 **Prevention of Unauthorized 'apt' Usage:** The policy now blocks the use of the 'apt' command as demonstrated in the following command:
 
 ```plain
-kubectl exec -it -n wordpress-mysql $POD -- bash -c "apt update && apt install masscan"
+kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
 ```{{exec}}
 
 
