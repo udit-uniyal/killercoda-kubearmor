@@ -5,7 +5,7 @@
 **Exploitation:** The attacker leverages this vulnerability by executing the following command on the target system using 'kubectl':
 
 ```plain
-kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
+kubectl exec -it -n wordpress-mysql $POD -- bash -c "apt update && apt install masscan"
 ```{{exec}}
 
 **Unauthorized Installation:** 'masscan' is successfully installed on the target system, providing the attacker with a powerful network scanning tool.
