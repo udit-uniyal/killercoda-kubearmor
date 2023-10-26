@@ -9,3 +9,5 @@ kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
 
 
 **Mitigating the Attack:** With the policy in place, the attacker's attempts to install 'masscan' using 'apt' are thwarted. The policy denies the execution of package management tools, preventing unauthorized software installations
+
+To view the logs for KubeArmor, go to the Karmor logs tab.
