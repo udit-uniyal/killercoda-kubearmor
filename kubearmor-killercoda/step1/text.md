@@ -5,8 +5,10 @@ helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update 
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
 kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/pkg/KubeArmorOperator/config/samples/sample-config.yml
-sleep 5
-kubectl wait --for=condition=ready --timeout=5m -n kubearmor pod -l kubearmor-app=kubearmor
+kubectl wait --for=condition=ready --timeout=1m -n kubearmor pod -l kubearmor-app=kubearmor-operator
+kubectl wait --for=condition=ready --timeout=1m -n kubearmor pod -l kubearmor-app=kubearmor-controller
+kubectl wait --for=condition=ready --timeout=1m -n kubearmor pod -l kubearmor-app=kubearmor-relay
+kubectl wait --for=condition=ready --timeout=1m -n kubearmor pod -l kubearmor-app=kubearmor
 ```{{exec}}
 
 OR
