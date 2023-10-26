@@ -12,4 +12,4 @@ kubectl exec -it $POD -- bash -c "apt update && apt install masscan"
 
 **Potential Risks:** With 'masscan' at their disposal, the attacker can conduct extensive network scans, potentially identifying vulnerabilities, open ports, and potential attack vectors on the target network.
 
-To view the logs for KubeArmor, go to the Karmor logs tab.
+
