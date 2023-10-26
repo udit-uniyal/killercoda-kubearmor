@@ -13,3 +13,4 @@ tmux send-keys -t mySession.0 'karmor logs -n default' C-m
 tmux send-keys -t mySession.1 'pod_name=$(kubectl get pod -n default -o custom-columns=:metadata.name --no-headers | head -n 1); kubectl exec -it -n default $pod_name -- cat /etc/nginx/conf.d/default.conf' C-m
 tmux attach-session -t mySession
 ```{{exec}}
+`exit`{{exec}}
