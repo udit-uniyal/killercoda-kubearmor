@@ -1,6 +1,6 @@
 First we need to install kubeArmor in our kubernetes envirionment
 
-```plain
+```
 helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update 
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
