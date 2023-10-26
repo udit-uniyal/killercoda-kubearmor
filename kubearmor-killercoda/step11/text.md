@@ -6,3 +6,6 @@ This is because the chroot command allows a process to change its root directory
 The KubeArmor policy blocks the chroot command because it is considered to be a risky command. If the Nginx process were to use the chroot command to change its root directory to a different location, an attacker could exploit a vulnerability in the Nginx process to gain access to the rest of the system.
 
 If you need to run the chroot command on a pod that is protected by KubeArmor, you can create a custom KubeArmor policy that allows the command. However, it is important to carefully consider the security implications of doing so.
+
+
+To view the logs for KubeArmor, go to the Karmor logs tab.
