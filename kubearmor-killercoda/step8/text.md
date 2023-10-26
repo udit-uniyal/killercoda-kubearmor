@@ -3,3 +3,5 @@
 `kubectl exec -it $POD -- bash`{{exec}}
 
 `curl https://$KUBERNETES_PORT_443_TCP_ADDR/api --insecure --header "Authorization: Bearer $(cat /run/secrets/kubernetes.io/serviceaccount/token)" && exit`{{exec}}
+
+To view the logs for KubeArmor, go to the Karmor logs tab.
