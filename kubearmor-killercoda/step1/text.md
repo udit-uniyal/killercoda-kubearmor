@@ -11,6 +11,7 @@ kubectl wait --for=condition=ready --timeout=2m -n kubearmor pod -l kubearmor-ap
 kubectl wait --for=condition=ready --timeout=2m -n kubearmor pod -l kubearmor-app=kubearmor-relay
 sleep 8
 kubectl wait --for=condition=ready --timeout=2m -n kubearmor pod -l kubearmor-app=kubearmor
+kubectl wait --for=condition=ready --timeout=1m -n kubearmor pod -l kubearmor-app=kubearmor-snitch
 ```{{exec}}
 
 OR
