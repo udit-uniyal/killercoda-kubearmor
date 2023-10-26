@@ -1,15 +1,11 @@
 
 ### Attacker's perspective:
 
-The attacker knows that the defender is auditing access to the /etc/nginx/ directory. This means that the attacker will need to be more careful when trying to exploit vulnerabilities in the Nginx application.
-
-The attacker may try to find a way to exploit the Nginx application without accessing the /etc/nginx/ directory. For example, the attacker may try to exploit a vulnerability in the Nginx application that allows them to execute arbitrary code.
-
-If the attacker is able to exploit a vulnerability in the Nginx application, they may be able to gain access to the /etc/nginx/ directory. However, the attacker will need to be careful to avoid generating audit logs.
+Suppose no blocking policy is implemented in the /etc/nginx directory, and the attacker attempts to steal data. However, since the audit policy is implemented, we can access all the logs.
 
 ### Defender's perspective:
 
-The defender is happy to see that the KubeArmor policy is auditing access to the /etc/nginx/ directory. This means that the defender will be able to detect any unauthorized attempts to access the directory.
+The defender is pleased to see that the KubeArmor policy audits access to the /etc/nginx/ directory. This means the defender can detect any unauthorized attempts to access the directory.
 
 The defender can review the audit logs to identify any suspicious activity. For example, the defender may look for attempts to access the directory from unusual locations or at unusual times.
 
