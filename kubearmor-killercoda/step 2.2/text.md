@@ -1,11 +1,7 @@
 
-The Karmor CLI Utility is a tool that can be used to manage KubeArmor, a container-aware runtime security enforcement system. The installation command for the Karmor CLI Utility is:
+The Karmor CLI Utility is a tool that can be used to manage KubeArmor.
 
-`curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin`{{exec}}
-
-This command will download and install the Karmor CLI Utility to the /usr/local/bin directory.
-
-Once the Karmor CLI Utility is installed, you can use it to view the logs for KubeArmor. To do this, open a new tab in KillerCoda and run the following command:
+You can use karmor to view the logs for KubeArmor. To do this, open a new tab in KillerCoda and run the following command:
 
 `karmor logs`{{exec}}
 
