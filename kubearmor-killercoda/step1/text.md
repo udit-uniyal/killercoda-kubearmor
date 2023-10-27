@@ -12,7 +12,7 @@ OR
 
 ```plain
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
-karmor install
+karmor install --image=kubearmor/kubearmor:v1.0.1
 ```{{exec}}
 
 
