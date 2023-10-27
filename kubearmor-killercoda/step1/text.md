@@ -5,7 +5,6 @@ helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update 
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
 kubectl apply -f https://raw.githubusercontent.com/kubearmor/KubeArmor/main/pkg/KubeArmorOperator/config/samples/sample-config.yml
-cat <<EOF | #!/bin/bash
 #!/bin/bash
 namespace="kubearmor"
 duration=120
@@ -17,7 +16,6 @@ while kubectl get po -n $namespace | tail -n +2 | awk '{print $3}' | grep -q -v 
 done
 kill $watch_pid
 echo "All pods are in the 'Running' state. Exiting..."
-EOF
 ```{{exec}}
 
 OR
