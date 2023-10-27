@@ -6,7 +6,7 @@ kubectl exec -it -n default $POD -- cat /etc/nginx/conf.d/default.conf
 
 To view the logs, you can use the following command:
 
-karmor logs -n default
+
 
 
 
