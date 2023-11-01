@@ -25,7 +25,7 @@ spec:
       recursive: true
       readOnly: true
       action: Block
-      message: "only allow readonly access of cert folder to all process
+      message: "only allow readonly access of cert folder to all processes"
 EOF
 ```{{exec}}
 
