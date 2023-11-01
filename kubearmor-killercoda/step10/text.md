@@ -1,5 +1,6 @@
 File policy:
-
+```
+cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
@@ -25,3 +26,6 @@ spec:
       readOnly: true
       action: Block
       message: "only allow readonly access of cert folder to all process
+EOF
+```{{exec}}
+
