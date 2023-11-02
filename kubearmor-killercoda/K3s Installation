@@ -1,0 +1,1 @@
+'curl -O -L https://github.com/kubearmor/KubeArmor/raw/main/contribution/k3s/install_k3s.sh && bash install_k3s.sh'{{exec}}
