@@ -1,10 +1,11 @@
-File policy:
+Let's apply the policy:
+
 ```
 cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
-  name: nginx-file-policy
+  name: nginx-least-permissive-policy
 spec:
   selector:
     matchLabels:
@@ -26,6 +27,22 @@ spec:
       readOnly: true
       action: Block
       message: "only allow readonly access of cert folder to all processes"
+  network:
+    matchProtocols:
+    - protocol: tcp
+      fromSource:
+      - path: /usr/sbin/nginx
+    - protocol: udp
+      fromSource:
+      - path: /usr/sbin/nginx
+  process:
+    matchPaths:
+    - path: /usr/sbin/nginx
+    - path: /usr/bin/bash
+    - path: /usr/bin/cat
+    - path: /usr/bin/ls
+    - path: /usr/bin/curl
+  action:
+    Allow
 EOF
 ```{{exec}}
-
