@@ -5,7 +5,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
-  name: process-based-asset-accessleast-permissive policy
+  name: process-based-asset-accessleast-permissive-policy
   namespace: default
 spec:
   selector:
