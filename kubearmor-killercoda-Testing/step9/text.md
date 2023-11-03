@@ -1,3 +1,3 @@
-By default the security posture is set to audit. Lets change the security posture to default deny.
+Before policy enforcement, the following execution is successful:
 
-`kubectl annotate ns default kubearmor-file-posture=block --overwrite`{{exec}}
+`kubectl exec -it $POD -- bash -c 'cd /etc/nginx/ && ls' 'exit'`{{exec}}
