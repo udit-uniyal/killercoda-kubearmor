@@ -1,4 +1,4 @@
-Combining Process based network control and Process based asset access policy will secure the container completely below is the policy after combining both:
+Combining process-based network control and process-based asset access policies will completely secure the container. Below is the merged policy:
 
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
