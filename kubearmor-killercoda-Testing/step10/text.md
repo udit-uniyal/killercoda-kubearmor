@@ -2,6 +2,7 @@ The attacker employs various attack techniques to modify configuration files. Th
 
 
 ```
+cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
