@@ -1,3 +1,3 @@
 To install K3s, simply click the link below and execute the command:
 
-`curl -O -L https://github.com/kubearmor/KubeArmor/raw/main/contribution/k3s/install_k3s.sh && bash install_k3s.sh`{{exec}}
+`curl -O -L https://github.com/udit-uniyal/kubearmor/blob/main/kubearmor-killercoda-Testing/KillerCoda_K3s_Installation.sh && bash install_k3s.sh`{{exec}}
