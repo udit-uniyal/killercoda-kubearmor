@@ -12,7 +12,6 @@ metadata:
   name: network-based-least-permissive-policy
   namespace: default
 spec:
-  severity: 4
   selector:
     matchLabels:
       app: nginx
