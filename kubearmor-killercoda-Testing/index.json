@@ -60,23 +60,23 @@
         "text": "Attackscenario3/text.md"
       },
       {
-        "title": "Attack Scenario 3: Before Policy Enforcement",
-        "text": "step9/text.md"
-      },
-      {
-        "title": "Attack Scenario 3: Apply Policy: Part-1 Process based asset access",
+        "title": "Attack Scenario 3: Part-1 Process based asset accessleast permissive policy",
         "text": "step10/text.md"
       },
       {
-        "title": "Attack Scenario 3: Apply Policy: Part-1 Process based asset access",
+        "title": "Attack Scenario 3: Process based asset access least permissive policy",
         "text": "step10.1/text.md"
       },
       {
-        "title": "Attack Scenario 3: Apply Policy: Part-2 Process based network control",
+        "title": "Attack Scenario 3: Network based least permissive policy",
         "text": "step10.2/text.md"
       },
       {
-        "title": "Attack Scenario 3: After Policy Enforcement",
+        "title": "Attack Scenario 3: Combined Process based asset access least permissive policy and Network based least permissive policy",
+        "text": "step10.3/text.md"
+      },
+      {
+        "title": "Attack Scenario 3: ",
         "text": "step11/text.md"
       }
       
