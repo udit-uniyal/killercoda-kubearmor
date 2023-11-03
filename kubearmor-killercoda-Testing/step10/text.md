@@ -1,6 +1,5 @@
 The attacker employs various attack techniques to modify configuration files. The following KubeArmor policy restricts unauthorized processes from accessing the configuration files.
 
-
 ```
 cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
