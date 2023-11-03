@@ -33,3 +33,9 @@ EOF
 kubectl annotate ns default kubearmor-network-posture=block --overwrite
 ```{{exec}}
 
+
+Policy blocks the below operation:
+
+```
+kubectl exec -it $POD -- bash -c 'curl www.google.com && exit'
+```{{exec}}
