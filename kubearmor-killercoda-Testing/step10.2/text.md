@@ -1,4 +1,4 @@
-Delete all policies to test the Process based network control policy:
+Delete all policies to test the Network based least permissive policy:
 
 `kubectl delete ksp --all`{{exec}}
 
@@ -9,7 +9,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
-  name: restrict-proccess
+  name: network-based-least-permissive-policy
   namespace: default
 spec:
   severity: 4
