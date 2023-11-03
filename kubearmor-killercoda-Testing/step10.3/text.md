@@ -1,5 +1,7 @@
 Combining process-based network control and process-based asset access policies will completely secure the container. Below is the merged policy:
 
+```
+cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
@@ -39,3 +41,5 @@ spec:
     - path: /usr/bin/bash
   message: process-based-asset-access
   action: Allow
+EOF
+```{{exec}}
