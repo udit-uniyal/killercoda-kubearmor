@@ -1,6 +1,7 @@
 
 Attacker binaries can communicate with their C&C servers and exfiltrate data using a variety of network primitives. To protect your Kubernetes cluster let's apply below policy:
 
+```
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
@@ -21,3 +22,4 @@ spec:
       - path: /usr/bin/wget
   action:
     Allow
+```{{exec}}
