@@ -8,5 +8,5 @@
 
 This command fetches the service account token, which is used for authenticating with the Kubernetes API server.
 
-**Unauthorized Access to Kubernetes API Server:** With the service account token in hand, the attacker can access the Kubernetes API server. They can make requests to the API server, potentially leading to unauthorized control over the cluster or extracting sensitive information.Unauthorized Access to Kubernetes API Server: With the service account token in hand, the attacker can access the Kubernetes API server. They can make requests to the API server, potentially leading to unauthorized control over the cluster or extracting sensitive information.
+
 
