@@ -1,11 +1,12 @@
-Let's apply the policy:
+The attacker employs various attack techniques to modify configuration files. The following KubeArmor policy restricts unauthorized processes from accessing the configuration files.
+
 
 ```
-cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
-  name: nginx-least-permissive-policy
+  name: only-allow-nginx-exec
+  namespace: default
 spec:
   selector:
     matchLabels:
@@ -17,32 +18,20 @@ spec:
     - dir: /etc/nginx/
       recursive: true
       fromSource:
-        - path: /usr/sbin/nginx
+      - path: /usr/sbin/nginx
     - dir: /etc/nginx/
       recursive: true
-      action: Block
-      message: "access attempted to /etc/nginx/ outside of whitelisted processes"
-    - dir: /etc/ssl/
+      fromSource:
+      - path: /usr/bin/cd
+    - dir: /etc/nginx/
       recursive: true
       readOnly: true
       action: Block
-      message: "only allow readonly access of cert folder to all processes"
-  network:
-    matchProtocols:
-    - protocol: tcp
-      fromSource:
-      - path: /usr/sbin/nginx
-    - protocol: udp
-      fromSource:
-      - path: /usr/sbin/nginx
   process:
     matchPaths:
     - path: /usr/sbin/nginx
     - path: /usr/bin/bash
-    - path: /usr/bin/cat
-    - path: /usr/bin/ls
-    - path: /usr/bin/curl
-  action:
-    Allow
+  message: process-based-asset-access
+  action: Allow
 EOF
 ```{{exec}}
