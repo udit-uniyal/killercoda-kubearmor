@@ -69,18 +69,6 @@
       {
         "title": "Attack Scenario 3: After Policy Enforcement",
         "text": "step11/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: Introduction",
-        "text": "Attackscenario4/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: Apply Policy",
-        "text": "step12/text.md"
-      },
-      {
-        "title": "Attack Scenario 4: Kubearmor Logs",
-        "text": "step13/text.md"
       }
       
     ],
