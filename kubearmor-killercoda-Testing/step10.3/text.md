@@ -5,7 +5,7 @@ cat <<EOF | kubectl apply -f -
 apiVersion: security.kubearmor.com/v1
 kind: KubeArmorPolicy
 metadata:
-  name: merged-policy
+  name: least-permissive-policy
   namespace: default
 spec:
   selector:
