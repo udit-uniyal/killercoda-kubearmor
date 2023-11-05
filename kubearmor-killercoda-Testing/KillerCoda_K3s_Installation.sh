@@ -52,7 +52,7 @@ while true; do
         break
     fi
     echo "Waiting for all pods to be in the 'Running' state"
-    sleep 1
+    sleep 3
 done
 
 kubectl get pods -A
