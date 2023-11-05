@@ -6,11 +6,15 @@ karmor install
 ```{{exec}}
 
 OR
-
+First, install Helm using the following command
 ```
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
+```{{exec}}
+
+Now, install KubeArmor using the following commands:
+```
 helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update kubearmor
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --create-namespace
