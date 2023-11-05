@@ -56,3 +56,4 @@ while true; do
 done
 
 kubectl get pods -A
+sleep 3
