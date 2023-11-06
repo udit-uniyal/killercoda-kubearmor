@@ -1,8 +1,6 @@
 
 <br>
 
-### KubeArmor: The Kubernetes security solution that gives you peace of mind.
-
-Give it a chance, and you'll be glad you did.
+### KubeArmor: Runtime protection for Kubernetes & other cloud Workloads.
 
 ![Scan results](./kubearmor-logo.png)
