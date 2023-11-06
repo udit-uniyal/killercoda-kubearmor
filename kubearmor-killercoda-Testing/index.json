@@ -23,59 +23,59 @@
         "text": "step 2.2/text.md"
       },
       {
-        "title": "Attack Scenario 1: Deny Access to Package Management Tools (apt/apt-get)",
+        "title": "Deny Access to Package Management Tools (apt/apt-get)",
         "text": "Attackscenerio1/text.md"
       },
       {
-        "title": "Attack Scenario 1: Before Policy Enforcement",
+        "title": "Deny Access to Package Management Tools (apt/apt-get): Before Policy Enforcement",
         "text": "step3/text.md"
       },
       {
-        "title": "Attack Scenario 1: Apply Policy",
+        "title": "Deny Access to Package Management Tools (apt/apt-get): Apply Policy",
         "text": "step4/text.md"
       },
       {
-        "title": "Attack Scenario 1: After Policy Enforcement",
+        "title": "Deny Access to Package Management Tools (apt/apt-get): After Policy Enforcement",
         "text": "step5/text.md"
       },
       {
-        "title": "Attack Scenario 2:  Deny Access to Service Account Token",
+        "title": "Deny Access to Service Account Token",
         "text": "Attackscenario2/text.md"
       },
       {
-        "title": "Attack Scenario 2: Before Policy Enforcement",
+        "title": "Deny Access to Service Account Token: Before Policy Enforcement",
         "text": "step6/text.md"
       },
       {
-        "title": "Attack Scenario 2: Apply Policy",
+        "title": "Deny Access to Service Account Token: Apply Policy",
         "text": "step7/text.md"
       },
       {
-        "title": "Attack Scenario 2: After Policy Enforcement",
+        "title": "Deny Access to Service Account Token: After Policy Enforcement",
         "text": "step8/text.md"
       },
       {
-        "title": "Attack Scenario 3: Deny Access to File, Process, and network connections",
+        "title": "Deny Access to File, Process, and network connections",
         "text": "Attackscenario3/text.md"
       },
       {
-        "title": "Attack Scenario 3: Process based asset access least permissive policy",
+        "title": "Deny Access to File, Process, and network connections: Process based asset access least permissive policy",
         "text": "step10/text.md"
       },
       {
-        "title": "Attack Scenario 3: Process based asset access least permissive policy",
+        "title": "Deny Access to File, Process, and network connections: Process based asset access least permissive policy",
         "text": "step10.1/text.md"
       },
       {
-        "title": "Attack Scenario 3: Network based least permissive policy",
+        "title": "Deny Access to File, Process, and network connections: Network based least permissive policy",
         "text": "step10.2/text.md"
       },
       {
-        "title": "Attack Scenario 3: Combined Process based asset access least permissive policy and Network based least permissive policy",
+        "title": "Deny Access to File, Process, and network connections: Combined Process based asset access least permissive policy and Network based least permissive policy",
         "text": "step10.3/text.md"
       },
       {
-        "title": "Attack Scenario 3: ",
+        "title": "Deny Access to File, Process, and network connections",
         "text": "step11/text.md"
       }
       
