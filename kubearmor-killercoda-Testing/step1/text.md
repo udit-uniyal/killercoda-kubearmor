@@ -12,5 +12,5 @@ helm repo add kubearmor https://kubearmor.github.io/charts
 helm repo update kubearmor
 helm upgrade --install kubearmor-operator kubearmor/kubearmor-operator -n kubearmor --set autoDeploy=true --create-namespace
 curl -sfL http://get.kubearmor.io/ | sudo sh -s -- -b /usr/local/bin
-bash setup.sh
+curl -sSL https://raw.githubusercontent.com/kubearmor/KubeArmor/main/contribution/Killercoda-Kubearmor/kubearmor-installation-view.sh | bash
 ```{{exec}}
