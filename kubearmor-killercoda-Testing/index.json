@@ -75,7 +75,7 @@
         "text": "step10.3/text.md"
       },
       {
-        "title": "Deny Access to File, Process, and network connections",
+        "title": "Deny Access to File, Process, and network connections: Blocking chroot process",
         "text": "step11/text.md"
       }
       
