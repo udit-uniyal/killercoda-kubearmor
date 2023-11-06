@@ -24,7 +24,7 @@
         "text": "step 2.2/text.md"
       },
       {
-        "title": "Attack Scenario 1: Introduction",
+        "title": "Attack Scenario 1: Deny Access to Package Mgmt Tools (apt)",
         "text": "Attackscenerio1/text.md"
       },
       {
@@ -40,7 +40,7 @@
         "text": "step5/text.md"
       },
       {
-        "title": "Attack Scenario 2: Introduction",
+        "title": "Attack Scenario 2:  Deny Access to Service Account Token",
         "text": "Attackscenario2/text.md"
       },
       {
@@ -56,7 +56,7 @@
         "text": "step8/text.md"
       },
       {
-        "title": "Attack Scenario 3: Introduction",
+        "title": "Attack Scenario 3: Deny Access to File, Process, and network connections",
         "text": "Attackscenario3/text.md"
       },
       {
