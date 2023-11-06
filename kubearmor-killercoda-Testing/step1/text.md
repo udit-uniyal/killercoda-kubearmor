@@ -1,4 +1,4 @@
-First, install Helm using the following command
+First, install Helm using the following commands:
 
 ```
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
